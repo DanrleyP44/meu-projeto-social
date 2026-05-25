@@ -7,9 +7,20 @@
 
 body,
 html {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+body {
   background: url('../imagens/imagem-de-fundo.jpg') no-repeat top center;
   background-size: cover;
-  height: 97vh;
+  background-attachment: fixed;
+}
+
+main {
+  height: 100vh;
+  position: relative;
 }
 
 #telefone {
@@ -26,7 +37,7 @@ section {
   text-align: right;
 }
 
-section a img {
+section img {
   height: 50px;
   width: 50px;
   border-radius: 50%;
@@ -36,10 +47,19 @@ section a img {
     transform 0.3s,
     border,
     0.3s;
+  box-sizing: border-box;
 }
 
 section a img:hover {
   border: 2px solid white;
   transform: translate(-3px, -3px);
   box-shadow: 5px 5px 10px black;
+}
+
+#tela {
+  position: relative;
+  top: 80px;
+  right: 22px;
+  height: 471px;
+  width: 269px;
 }
